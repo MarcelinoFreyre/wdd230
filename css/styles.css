@@ -16,7 +16,7 @@ header {
     grid-row-start: 1;
 }
 
-header img {
+.photo-box {
     width: 200px;
     height: 200px;
 }
