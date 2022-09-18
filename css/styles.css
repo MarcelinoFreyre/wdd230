@@ -10,17 +10,17 @@ header {
     margin: 0 auto
 }
 
-.photo-box {
+/*.photo-box {
     display: grid;
     grid-column-start: 1;
     grid-row-start: 1;
 }
 
-.photo-box {
-    width: 200px;
-    height: 200px;
+header img {
+    width: auto;
+    height: auto;
 }
-
+*/
 h1 {
     color: black;
 }
