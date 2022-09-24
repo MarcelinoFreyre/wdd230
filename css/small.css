@@ -1,0 +1,21 @@
+h1 {
+    color: red;
+    grid-row-start: 1;
+}
+
+header img {
+    width: 100px;
+    height: 100px;
+}
+
+#titles {
+    grid-column: 1/2;
+    grid-row-start: 1;
+    float: left;
+    width: 50%; 
+    margin: 10px auto; 
+    border: 1px solid black; 
+    padding: 7px;
+    clear:both;
+    overflow: auto;
+}

@@ -1,0 +1,99 @@
+@media (min-width: 32.5em) {
+    header {
+        background-color: aquamarine;
+        display: grid;
+        grid-template-columns: 210px auto;
+        justify-items: center;
+        height: 210px;
+    }
+    #content {
+        max-width: 960px;
+        margin: 0 auto
+    }
+    
+    .photo-box {
+        display: grid;
+        grid-column-start: 1;
+        grid-row-start: 1;
+    }
+
+    header img {
+        width: 200px;
+        height: 200px;
+    }
+
+    h1 {
+        color: black;
+    }
+    
+    .title {
+        margin-top: 65px;
+        color: black;
+        font-family: 'Inconsolata', monospace;
+        font-family: 'Metal', cursive;
+    }
+    
+    .index-grid {
+        display: grid;
+        grid-template-columns: 1fr 250px;
+    }
+    
+    #titles {
+        grid-column: 1/2;
+        grid-row-start: 1;
+        float: left;
+        width: 70%; 
+        margin: 20px auto; 
+        border: 1px solid black; 
+        padding: 10px;
+        clear:both;
+        overflow: auto;
+    }
+    .title-2{
+        grid-row: 1/2;
+        margin-bottom: 30px;
+    }
+    .title-3{
+        margin-bottom: 30px;
+    }
+    .title-4{
+        margin-bottom: 30px;
+    }
+    .title-5{
+        margin-bottom: 30px;
+    }
+    .title-6{
+        margin-bottom: 30px;
+    }
+    .title-7{
+        margin-bottom: 30px;
+    }
+    .title-8{
+        margin-bottom: 30px;
+    }
+    .title-9{
+        margin-bottom: 30px;
+    }
+    .title-10{
+        margin-bottom: 30px;
+    }
+    .title-11{
+        margin-bottom: 30px;
+    }
+    
+    footer {
+        background-color: aquamarine;
+        height: 160px;
+        justify-items: center;
+        display: grid;
+        grid-template-rows: 1fr 1fr;
+    }
+    
+    .mydata {
+        grid-row-end: 1;
+    }
+    
+    #currentdate {
+        grid-row-start: 1;
+    }
+}
