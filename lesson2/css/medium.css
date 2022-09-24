@@ -1,0 +1,46 @@
+@media (min-width: 32.5em) {
+    header {
+        background-color: aquamarine;
+        display: grid;
+        justify-items: center;
+    }
+
+    h1 {
+        font-family: 'Lemon', cursive;
+        text-align: center;
+    }
+
+    #content {
+        display: grid;
+        grid-template-columns: 400px 1fr;
+        justify-items: center;
+    }
+    
+    .repetition {
+        height: auto;
+        text-align: center;
+        grid-column: 1/2;
+        grid-row: 1/2;
+    }
+
+    .white-space {
+        height: auto;
+        text-align: center;
+        grid-column: 2/3;
+        grid-row: 1/2;
+    }
+
+    .contrast {
+        text-align: center;
+        grid-column: 1/3;
+        grid-row: 2/3;
+        align-items: center;
+    }
+    footer {
+        background-color: aquamarine;
+        height: 160px;
+        justify-items: center;
+        display: grid;
+        grid-template-rows: 1fr 1fr;
+    }
+}
