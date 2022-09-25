@@ -12,6 +12,7 @@
 
     #content {
         display: grid;
+        grid-template-rows: auto;
         grid-template-columns: 400px 1fr;
         justify-items: center;
     }
