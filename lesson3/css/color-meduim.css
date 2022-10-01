@@ -1,0 +1,30 @@
+html {
+    background-color: #FAC042;
+}
+/* 
+.top {
+    margin-left: 10%;
+    background-color: #092D44;
+    width: 80%;
+    height: 200px;
+    text-align: center;
+}
+.top h1, h2{
+    color: white;
+} */
+
+main h2{
+    color: #22214E;
+}
+
+.bottom {
+    margin-left: 10%;
+    background-color: #092D44;
+    width: 80%;
+    height: 50px;
+    text-align: center;
+}
+
+.bottom span {
+    color: white;
+}
