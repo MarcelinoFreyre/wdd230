@@ -1,0 +1,22 @@
+@media only screen and (min-width: 48em) {
+    /*Display flex*/
+    .navigation {
+        display: flex;
+    }
+
+    /*Hidding bar in smaller view*/
+    .navigation li {
+        display: block; /* change state in small view */
+        flex: 1 1 auto;
+    }
+
+    /*Aligning text*/
+    .navigation a {
+        text-align: center;
+    }
+
+    /*Hidding bar in smaller view*/
+    .navigation li:first-child {
+        display: none;
+    }
+}
