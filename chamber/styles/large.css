@@ -37,7 +37,6 @@
 		.weather {
 			grid-row: 2/3;
 			grid-column: 1/2;
-			margin-right: 10px;
 		}
 
 		/*Setting join class place*/
