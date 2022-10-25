@@ -165,14 +165,23 @@ nav {
 } */
 
 .event {
+    color: white;
+    background-color: #22214E;
     margin-top: 10px;
     padding-top: 5px;
     padding-left: 5px;
     border: solid 2px;
     height: 100px;
+}
+
+.event p {
+    border-bottom: solid 1px;
+
 }
 
 .weather {
+    color: white;
+    background-color: #22214E;
     margin-top: 10px;
     padding-top: 5px;
     padding-left: 5px;
@@ -180,12 +189,34 @@ nav {
     height: 100px;
 }
 
+.weather section {
+    display: grid;
+    grid-template-columns: 3;
+}
+
+.weather section p {
+    /* grid */
+    border-bottom: solid 1px;
+}
+
+.weather section img {
+    width: 60px;
+    height: auto;
+    float: left;
+}
+
 .news-release {
+    color: white;
+    background-color: #22214E;
     margin-top: 10px;
     padding-top: 5px;
     padding-left: 5px;
     border: solid 2px;
     height: 100px;
+}
+
+.news-release p {
+    border-bottom: solid 1px;
 }
 
 .layout2 {
@@ -196,6 +227,8 @@ nav {
 }
 
 .spotlight {
+    color: white;
+    background-color: #22214E;
     margin: 10px;
     padding-top: 5px;
     padding-left: 5px;
@@ -203,12 +236,28 @@ nav {
     height: 100px;
 }
 
+.spotlight p {
+    border-bottom: solid 1px;
+}
+
 .spotlight3 {
+    color: white;
+    background-color: #22214E;
     display: none;
 }
 
+.spotlight3 p {
+    border-bottom: solid 1px;
+}
+
 .join {
+    color: white;
+    background-color: #22214E;
     display: none;
+}
+
+.join p {
+    border-bottom: solid 1px;
 }
 
 .container {

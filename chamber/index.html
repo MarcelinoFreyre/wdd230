@@ -61,7 +61,24 @@
         <div class="layout">
             <div class="hero">
                 <picture>
-                    <img class="hero-img" src="./images/wdd230-org.jpg">
+                    <!-- <source media="(max-width: 32.5em)"
+                    srcset="images/wdd230-orgSMALL.webp">
+                    <source media="(min-width: 32.6em)"
+                    srcset="images/wdd230-orgMEDIUM.webp">
+                    <source media="(min-width: 48em)"
+                    srcset="images/wdd230-org.webp">
+                    <img src="images/wdd230-org.webp" 
+                    alt="People Working in Office"> -->
+                    <img
+                    src="images/wdd230-org.webp"
+                    srcset="images/wdd230-orgSMALL.webp 1120w,
+                    images/wdd230-orgMEDIUM.webp 1214w,
+                    images/wdd230-org.webp 1236w"
+                    sizes="(min-width: 32.5em) 700px,
+                    (min-width: 48em) 500px,
+                    450px"
+                    alt="People Working in Office"
+                    >
                 </picture>
                 <button>Join the Chamber</button>
             </div>
@@ -69,7 +86,16 @@
                 <p>Event</p>
             </div>
             <div class="weather">
-                <p>Weather</p>
+                <section>
+                    <p><strong>Weather</strong></p>
+                    <img src="images/weather.webp" alt="Logo of Weather">
+                    <p><span id="t">33</span>°C</p>
+                    <p>Partly Cloudy</p>
+                    <p>Wind Speed: <span id="s">2.5</span> km/h</p>
+                    <p>
+                       Wind Chill: <span id="windChill"></span>
+                    </p>
+                </section>
             </div>
             <div class="news-release">
                 <p>News Release</p>
@@ -99,7 +125,8 @@
       <h3 id="demo"></h3>
     </footer>
 
-
+    <script src="scripts/windchill.js"></script>
     <script src="scripts/styles.js"></script>
+
 </body>
 </html>

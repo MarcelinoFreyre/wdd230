@@ -39,6 +39,12 @@
 			grid-column: 1/2;
 		}
 
+		.weather section img {
+			width: 80px;
+			height: auto;
+			float: left;
+		}
+
 		/*Setting join class place*/
 		.join {
 			grid-row: 3/4;
