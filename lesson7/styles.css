@@ -1,0 +1,13 @@
+header h1 {
+    margin-left: 100px;
+}
+
+/* main {
+    display: flex;
+    flex-direction: column;
+} */
+
+.pictures {
+    display: flex;
+    flex-direction: column;
+}
