@@ -12,13 +12,13 @@ const loadImages = (image) => {
         image.removeAttribute('data-src');
     };
 };
-debugger
+//debugger
 if ('IntersectionObserver' in window) 
 {
     const imgObserver = new IntersectionObserver((items, imgObserver) => {
     
     items.forEach(item => {
-        debugger;
+        //debugger;
         if (item.isIntersecting) {
             loadImages(item.target);
             imgObserver.unobserve(item.target);
