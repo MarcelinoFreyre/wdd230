@@ -4,13 +4,10 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Chamber</title>
-    <link rel="stylesheet" href="styles/base.css"/>
-    <link rel="stylesheet" href="styles/medium.css"/>
-    <link rel="stylesheet" href="styles/large.css"/>
+    <link rel="stylesheet" href="./styles/join.css">
+    <title>Join</title>
 </head>
 <body>
-        <h3 id="banner"></h3>
     <header>
         <div class="logo">
             <picture>
@@ -26,11 +23,10 @@
                 <li><a class="ham" href="#">Menu</a></li>
                 <li><a href="./discover.html">Discover</a></li>
                 <li><a href="#">Directory</a></li>
-                <li><a href="./join.html">Join</a></li>
+                <li><a href="#">Join</a></li>
                 <li><a href="#">Contact</a></li>
             </ul>
         </nav>
-        <div class="date"></div>
         <aside></aside>
         <div class="social">
             <a href="https://facebook.com"><svg enable-background="new 0 0 32 32" height="32px" id="Layer_1" version="1.0" viewBox="0 0 32 32" width="32px" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
@@ -58,60 +54,34 @@
         </div>
     </header>
     <main>
-        <div class="layout">
-            <div class="hero">
-                <picture>
-                    <img
-                    src="images/wdd230-org.webp"
-                    srcset="images/wdd230-orgSMALL.webp 1120w,
-                    images/wdd230-orgMEDIUM.webp 1214w,
-                    images/wdd230-org.webp 1236w"
-                    sizes="(min-width: 32.5em) 700px,
-                    (min-width: 48em) 500px,
-                    450px"
-                    alt="People Working in Office"
-                    >
-                </picture>
-                <button>Join the Chamber</button>
-            </div>
-            <div class="event">
-                <p>Event</p>
-            </div>
-            <div class="weather">
-                <p><strong>Weather</strong></p>
-                <section>
-                    <div>
-                        <img src="images/weather.webp" alt="Logo of Weather">
-                    </div>
-                    <div>
-                        <p><span id="t">33</span>°C</p>
-                        <p>Partly Cloudy</p>
-                        <p>Wind Speed: <span id="s">2.5</span> km/h</p>
-                        <p>
-                        Wind Chill: <span id="windChill"></span>
-                        </p>
-                    </div>
-                    
-                </section>
-            </div>
-            <div class="news-release">
-                <p>News Release</p>
-            </div>
-            <div class="layout2">
-                <div class="spotlight">
-                    <p>Spotlight 1</p>
-                </div>
-                <div class="spotlight">
-                    <p>Spotlight 2</p>
-                </div>
-                <div class="spotlight3">
-                    <p>Spotlight 2</p>
-                </div>                
-            </div>
-            <div class="join">
-                <p>Join</p>
-            </div>
-        </div>
+        <form action="./thankyou.html">
+            <label for="fname">First name:</label><br>
+            <input type="text" id="fname" name="fname" required><br>
+            <label for="lname">Last name:</label><br>
+            <input type="text" id="lname" name="lname" required><br>
+            <label for="title">Title:</label><br>
+            <input type="text" id="title" name="title"><br>
+            <label for="email">E-mail:</label><br>
+            <input type="email" id="email" name="email" 
+            placeholder="example@email.com" required><br>
+            <label for="phone">Cell phone number:</label><br>
+            <input type="tel" id="phone" name="phone" required><br>
+            <label for="bname">Business name:</label><br>
+            <input type="" id="bname" name="bname"><br>
+            <p>Membership level:</p><br>
+            <input type="radio" id="np" name="mlevel">
+            <label for="np">Non Profit</label><br>
+            <input type="radio" id="bronze" name="mlevel">
+            <label for="bronze">Bronze Membership</label><br>
+            <input type="radio" id="silver" name="mlevel">
+            <label for="silver">Silver Membership</label><br>
+            <input type="radio" id="gold" name="mlevel">
+            <label for="gold">Gold Membership</label><br>
+            <label for="description">Business description:</label><br>
+            <textarea name="description" rows="10" cols="50"></textarea><br>            
+            <div hidden class="date"></div>
+            <input type="submit" value="Submit">
+        </form>
     </main>
     <footer class="container">
         <h2 class="mydata">
@@ -121,9 +91,7 @@
     
       <h3 id="demo"></h3>
     </footer>
-
     <script src="scripts/windchill.js"></script>
     <script src="scripts/styles.js"></script>
-
 </body>
 </html>
