@@ -6,7 +6,7 @@ const datefield = document.querySelector(".date");
 
 const join_date = document.querySelector(".date");
 
-let title = document.getElementById('title')
+const title = document.getElementById('title');
 /*Declare variable to hold */
 
 const now = new Date();
@@ -45,3 +45,11 @@ const date_time = now.toJSON();
 
 join_date.innerHTML = `<em>${date_time}</em>`;
 
+title.addEventListener("input", (event) => {
+    if (title.validity.typeMismatch) {
+      title.setCustomValidity("The title must contain at least 7 alphabetic characters, and may contain hypens");
+      title.reportValidity();
+    } else {
+      title.setCustomValidity("");
+    }
+  });

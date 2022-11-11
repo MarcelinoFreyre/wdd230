@@ -123,6 +123,10 @@ form textarea {
     margin-bottom: 25px;
 }
 
+input:invalid {
+    box-shadow: 0 0 5px 1px red;
+  }
+
 @media (min-width: 32.5em) {
 }
 
