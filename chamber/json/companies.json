@@ -2,57 +2,66 @@
     "companies": [
         {
             "name": "Apple",
-            "phone": "800–275–2273",
+            "phone": "(800) 275-2273",
             "address": "1 Apple Park Way, Cupertino, California, U.S.",
-            "imageurl": "https://github.com/MarcelinoFreyre/wdd230/blob/main/chamber/images/Apple.png"
+            "imageurl": "images/Logos/Apple.png",
+            "level": "silver"
         },
         {
             "name": "Microsoft Corp",
             "phone": "(800) 865-9408",
             "address": "One Microsoft Way Redmond, Washington, U.S.",
-            "imageurl": "https://github.com/MarcelinoFreyre/wdd230/blob/main/chamber/images/Amazon.png"
+            "imageurl": "images/Logos/Microsoft.png",
+            "level": "silver"
         },
         {
             "name": "Saudi Arabian OI",
             "phone": "(013) 572 5577",
             "address": "Dhahran, Saudi Arabia",
-            "imageurl": "https://github.com/MarcelinoFreyre/wdd230/blob/main/chamber/images/Saudi.png"
+            "imageurl": "images/Logos/Saudi.png",
+            "level": "bronze"
         },
         {
             "name": "Alphabet",
             "phone": "567-789-3278",
             "address": "Googleplex, Mountain View, California, U.S.",
-            "imageurl": "https://github.com/MarcelinoFreyre/wdd230/blob/main/chamber/images/Alphabet.png"
+            "imageurl": "images/Logos/Alphabet.png",
+            "level": "gold"
         },
         {
             "name": "Amazon.com Inc",
             "phone": "888-585-3231",
             "address": "Seattle, Washington and Arlington, Virginia, U.S.",
-            "imageurl": "https://github.com/MarcelinoFreyre/wdd230/blob/main/chamber/images/Amazon.png"
+            "imageurl": "images/Logos/Amazon.png",
+            "level": "bronze"
         },
         {
             "name": "Tesla Inc",
             "phone": "1-800 662 7232",
             "address": "1 Tesla Road. Austin, TX 78725",
-            "imageurl": "https://github.com/MarcelinoFreyre/wdd230/blob/main/chamber/images/Tesla.png"
+            "imageurl": "images/Logos/Tesla.png",
+            "level": "gold"
         },
         {
             "name": "Berkshire Hathaway",
             "phone": "(402) 346-1400",
             "address": "Kiewit Plaza, Omaha, Nebraska, U.S.",
-            "imageurl": "https://github.com/MarcelinoFreyre/wdd230/blob/main/chamber/images/Berkshire.png"
+            "imageurl": "images/Logos/Berkshire.png",
+            "level": "silver"
         },
         {
             "name": "Nvidia Corp",
             "phone": "+1 408-486-2500",
             "address": "Santa Clara, California, U.S.",
-            "imageurl": "https://github.com/MarcelinoFreyre/wdd230/blob/main/chamber/images/Nvidia.png"
+            "imageurl": "images/Logos/Nvidia.png",
+            "level": "gold"
         },
         {
             "name": "Meta Platforms",
             "phone": "1 (855) 879-3967",
             "address": "1601 Willow Rd, Menlo Park, CA",
-            "imageurl": "https://github.com/MarcelinoFreyre/wdd230/blob/main/chamber/images/Meta.png"
+            "imageurl": "images/Logos/Meta.png",
+            "level": "bronze"
         }
     ]
 }
