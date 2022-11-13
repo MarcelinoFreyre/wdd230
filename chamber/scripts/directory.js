@@ -1,6 +1,5 @@
-const requestURL = '';
+const requestURL = 'https://github.com/MarcelinoFreyre/wdd230/blob/main/chamber/json/companies.json';
 const cards = document.querySelector('.cards');
-// const prophets2 = new Array()
 
 fetch(requestURL)
   .then(function (response) {
@@ -8,14 +7,13 @@ fetch(requestURL)
   })
   .then(function (jsonObject) {
     console.table(jsonObject);  // temporary checking for valid response and data parsing
-    const prophets = jsonObject['prophets']
-    // prophets2.push(...jsonObject['prophets'])
-    prophets.forEach(displayProphets);
+    const companies = jsonObject['companies']
+    companies.forEach(displayCompanies);
   });
 
 
 
-function displayProphets(prophet) { 
+function displayCompanies(company) { 
   // Create elements to add to the document
   let card = document.createElement('section');
   let h2 = document.createElement('h2');
@@ -24,13 +22,13 @@ function displayProphets(prophet) {
   let p2 = document.createElement('p');
 
 
-  // Change the textContent property of the h2 element to contain the prophet's full name
-  h2.textContent = `${prophet.name} ${prophet.lastname}`;
+  // Change the textContent property of the h2 element to contain the company name
+  h2.textContent = `${company.name}`;
 
 
   // Build the image attributes by using the setAttribute method for the src, alt, and loading attribute values. (Fill in the blank with the appropriate variable).
-  portrait.setAttribute('src', prophet.imageurl);
-  portrait.setAttribute('alt', 'Portait of ' + prophet.name + ' ' + prophet.lastname + ' - Latter-day president number ' + prophet.order);
+  portrait.setAttribute('src', company.imageurl);
+  portrait.setAttribute('alt', 'Portait of ' + company.name);
   portrait.setAttribute('loading', 'lazy');
 
   // Add/append the section(card) with the h2 element
@@ -40,8 +38,8 @@ function displayProphets(prophet) {
   card.appendChild(portrait);
 
   // Add birthdate data
-  p.textContent = `Date of Birth: ${prophet.birthdate}`
-  p2.textContent = `Place of Birth: ${prophet.birthplace}`
+  p.textContent = `Phone number: ${company.phone}`
+  p2.textContent = `Place of Birth: ${company.phone}`
 
   // Add/append the existing HTML div with the cards class with the section(card)
   document.querySelector('div.cards').appendChild(card);
