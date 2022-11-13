@@ -1,4 +1,4 @@
-const requestURL = 'https://github.com/MarcelinoFreyre/wdd230/blob/main/chamber/json/companies.json';
+const requestURL = 'https://marcelinofreyre.github.io/wdd230/chamber/json/companies.json';
 const cards = document.querySelector('#cards');
 
 fetch(requestURL)
@@ -22,14 +22,13 @@ function displayCompanies(company) {
   let p3 = document.createElement('p');
 
 
-  // Change the textContent property of the h2 element to contain the company name
   h2.textContent = `${company.name}`;
-
-
-  // Build the image attributes by using the setAttribute method for the src, alt, and loading attribute values. (Fill in the blank with the appropriate variable).
   logo.setAttribute('src', company.imageurl);
   logo.setAttribute('alt', 'Logo of ' + company.name);
   logo.setAttribute('loading', 'lazy');
+  p.textContent = `Phone number: ${company.phone}`
+  p2.textContent = `Location: ${company.address}`
+  p3.textContent = `Membership level: ${company.level}`
 
   // Add/append the section(card) with the h2 element
   card.appendChild(h2);
@@ -38,10 +37,6 @@ function displayCompanies(company) {
   card.appendChild(p3);
   card.appendChild(logo);
 
-  // Add birthdate data
-  p.textContent = `Phone number: ${company.phone}`
-  p2.textContent = `Location: ${company.address}`
-  p3.textContent = `Membership level: ${company.level}`
 
   // Add/append the existing HTML div with the cards class with the id(card)
   cards.appendChild(card);
