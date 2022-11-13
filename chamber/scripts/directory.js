@@ -39,7 +39,7 @@ function displayCompanies(company) {
 
   // Add birthdate data
   p.textContent = `Phone number: ${company.phone}`
-  p2.textContent = `Place of Birth: ${company.phone}`
+  p2.textContent = `Location: ${company.address}`
 
   // Add/append the existing HTML div with the cards class with the section(card)
   document.querySelector('div.cards').appendChild(card);
