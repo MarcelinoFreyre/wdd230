@@ -1,6 +1,7 @@
 // select HTML elements in the document
 const temperature = document.querySelector('#temperature');
 const description = document.querySelector('#currently');
+const windspeed = document.querySelector('#windSpeed')
 const weathericon = document.querySelector('#weathericon');
 const caption = document.querySelector('figcaption');
 const apiKey = "4ce191c6f8d82ff7aa50f70affa03999";
@@ -31,10 +32,11 @@ function capitalize(string) {
 // currentTemp.innerHTML = `<strong>${weatherData.main.temp.toFixed(0)}</strong>`;
 
 function displayResults(data) {
-  temperature.textContent = data.main.temp.toFixed(0);
-  let desc = capitalize(data.weather[0].description)
-  description.textContent = desc;
-  caption.textContent = `Current weather in Santa Fe: ${desc}`;
-  weathericon.src = `https://openweathermap.org/img/w/${data.weather[0].icon}.png`;
-  weathericon.alt = `Current weather in Santa Fe: ${desc}`;
+    temperature.textContent = data.main.temp.toFixed(0);
+    let desc = capitalize(data.weather[0].description)
+    description.textContent = desc;
+    windspeed.textContent = data.wind.speed;
+    caption.textContent = `Current weather in Santa Fe`;
+    weathericon.src = `https://openweathermap.org/img/w/${data.weather[0].icon}.png`;
+    weathericon.alt = `Current weather in Santa Fe: ${desc}`;
 }

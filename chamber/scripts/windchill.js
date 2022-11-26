@@ -1,5 +1,5 @@
-let t = parseFloat(document.getElementById('t').textContent);
-let s = parseFloat(document.getElementById('s').textContent);
+let t = parseFloat(document.getElementById('temperature').textContent);
+let s = parseFloat(document.getElementById('windChill').textContent);
 let windchill = '';
 
 
