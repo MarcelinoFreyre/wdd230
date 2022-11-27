@@ -118,3 +118,28 @@ nav {
 .responsive a.ham::before {
 	content: "❌ ";
 }
+
+#title {
+    width: 100%;
+    text-align: center;
+    align-items: center;
+    margin: 25px;
+    background-color: #22214E;
+}
+
+.layout {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.contact {
+    grid-column: 1/2;
+}
+
+.generalinfo {
+    grid-column: 2/3;
+}
+
+#subtitle {
+
+}

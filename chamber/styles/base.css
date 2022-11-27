@@ -172,6 +172,7 @@ nav {
     padding-left: 5px;
     border: solid 2px;
     height: 100px;
+    overflow: auto;
 }
 
 .event p {
@@ -187,6 +188,8 @@ nav {
     padding-left: 5px;
     border: solid 2px;
     height: 100px;
+    overflow: auto;
+    text-align: center;
 }
 
 .weather section {
@@ -205,6 +208,17 @@ nav {
     float: left;
 }
 
+.hideScroll {
+    overflow: auto;
+    height: 100px;
+    scrollbar-width: none; /*Firefox*/
+  }
+  
+  /*Webkit*/
+  .hideScroll::-webkit-scrollbar {
+    width: 0;
+  }
+
 .news-release {
     color: white;
     background-color: #22214E;
@@ -213,6 +227,7 @@ nav {
     padding-left: 5px;
     border: solid 2px;
     height: 100px;
+    overflow: auto;
 }
 
 .news-release p {
@@ -234,26 +249,29 @@ nav {
     padding-left: 5px;
     border: solid 2px;
     height: 100px;
+    overflow: auto;
 }
 
-.spotlight p {
-    border-bottom: solid 1px;
-}
+/* .spotlight p {
+   
+} */
 
 .spotlight3 {
     color: white;
     background-color: #22214E;
     display: none;
+    overflow: auto;
 }
 
-.spotlight3 p {
-    border-bottom: solid 1px;
-}
+/* .spotlight3 p {
+   
+} */
 
 .join {
     color: white;
     background-color: #22214E;
     display: none;
+    overflow: auto;
 }
 
 .join p {
@@ -300,8 +318,9 @@ nav {
         border: solid 2px;
         display: flex;
         flex-direction: row;
+        align-items: center;
         justify-content: center;
-    }
+    } 
 
     .spotlight {
         width: 100%;
@@ -383,6 +402,10 @@ nav {
         width: 80px;
         height: auto;
         float: left;
+    }
+
+    .hideScroll {
+        overflow: auto;
     }
 
     /*Setting join class place*/
