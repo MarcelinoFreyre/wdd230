@@ -134,12 +134,54 @@ nav {
 
 .contact {
     grid-column: 1/2;
+    margin-left: 10%;
+    padding: 10% 15% 20% 15%;
+    box-shadow: rgb(0 0 0 / 25%) 0 3px 11px;
+    -moz-box-shadow: rgba(0,0,0,0.25) 0 3px 11px 0 !important;
+    -webkit-box-shadow: rgb(0 0 0 / 25%) 0 3px 11px 0 !important;
 }
 
 .generalinfo {
     grid-column: 2/3;
+    margin-right: 10%;
+    padding: 10% 15% 20% 15%;
+    box-shadow: rgb(0 0 0 / 25%) 0 3px 11px;
+    -moz-box-shadow: rgba(0,0,0,0.25) 0 3px 11px 0 !important;
+    -webkit-box-shadow: rgb(0 0 0 / 25%) 0 3px 11px 0 !important;
 }
 
-#subtitle {
+.layout form label { 
+    margin-top: 20px;
+}
+    
+.layout form input {
+    margin-left: 25px;
+    margin-bottom: 25px;
+}
 
+.layout h1 {
+    margin-bottom: 10%;
+}
+
+.layout h3 {
+    margin-top: 8%;
+}
+
+@media only screen and (min-width: 48em) {
+    .navigation {
+        display: flex;
+    }
+
+    .navigation li {
+        display: block; /* change state in small view */
+        flex: 1 1 auto;
+    }
+
+    .navigation a {
+        text-align: center;
+    }
+
+    .navigation li:first-child {
+        display: none;
+    }
 }

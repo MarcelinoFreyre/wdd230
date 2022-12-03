@@ -123,6 +123,10 @@ form textarea {
     margin-bottom: 25px;
 }
 
+form p {
+    margin-left: 25px;
+}
+
 input:invalid {
     box-shadow: 0 0 5px 1px red;
   }
@@ -131,4 +135,20 @@ input:invalid {
 }
 
 @media only screen and (min-width: 48em) {
+    .navigation {
+        display: flex;
+    }
+
+    .navigation li {
+        display: block; /* change state in small view */
+        flex: 1 1 auto;
+    }
+
+    .navigation a {
+        text-align: center;
+    }
+
+    .navigation li:first-child {
+        display: none;
+    }
 }
