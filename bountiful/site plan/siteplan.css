@@ -1,0 +1,56 @@
+@import url('https://fonts.googleapis.com/css2?family=Concert+One&family=Raleway&display=swap');
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Concert One', cursive;
+}
+
+p {
+    font-family: 'Raleway', sans-serif;
+}
+
+main {
+    margin-top: 50px;
+    margin-bottom: 50px;
+    display: block;
+    background-color: #fffffa;
+    border: solid #ec9a29 0.3em;
+    border-radius: 25px;
+    text-align: center;
+    padding-bottom: 2em;
+    font-family: "Be Vietnam Pro", sans-serif;
+}
+
+main img {
+    justify-self: center;
+    max-width: 60%;
+    min-width: 400px;
+}
+
+#background,
+#white,
+#button,
+#hover,
+#orange {
+    border: solid black;
+}
+
+#background {
+    background-color: white;
+    color: white;
+}
+#white {
+    background-color: tomato;
+    color: tomato;
+}
+/* #button {
+    background-color: #092D44;
+    color: #092D44;
+} */
+#hover {
+    background-color: #3E2D29;
+    color: #3E2D29;
+}
+/* #other {
+    background-color: #2b2b2b;
+    color: #2b2b2b;
+} */
