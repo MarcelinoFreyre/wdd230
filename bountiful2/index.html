@@ -52,15 +52,25 @@
 
     <main>
 
-        <img id="banner-img" src="./images/Frutas2.webp" alt="Fruits for the largest size">
+        <picture>
+            <!--si se cumple la resolución no lee mas-->
+            <source srcset="./images/Frutas3.webp" media="(max-width:900px)">
+            <source srcset="./images/Frutas2.webp" media="(max-width:1280px)">
+            <source srcset="./images/Frutas.webp" media="(max-width:1536px)">
+            <img id="banner-img" src="./images/Frutas2.webp" alt="Fruits for the largest size">
+        </picture>
 
         <section class="coast">
-            <img src="./images/Coast.jpg" alt="California Coast">
+            <img src="./images/placeholder.jpg" data-src="./images/Coast.jpg" alt="California Coast">
 
             <div class="main-text">
-                <h1></h1>
+                <h1>Visitors, welcome to Bountiful Foods!</h1>
                 <p>
-
+                    Lorem ipsum dolor sit amet. Cum officia consequatur et aspernatur atque qui necessitatibus dolor est Quis dolores aut placeat 
+                    nihil? Ut quibusdam provident non magni debitis nam cupiditate sapiente et velit culpa ut blanditiis quam.
+    
+                    Et minus unde ex dignissimos quidem ut voluptatem nihil. Id earum excepturi et labore neque qui quae dolorum et sint 
+                    cupiditate et natus quia id corrupti consequatur? Eum ipsa tenetur et ullam voluptas aut quaerat minus.
                 </p>
             </div>
         </section>
@@ -98,13 +108,14 @@
                 <a href="./fresh.html">Place an Order</a>
             </div>
 
-            <img src="./images/shake.webp" alt="Glass Containing Shake" width="50%">
+            <img src="./images/placeholder.jpg" data-src="./images/shake.webp" width="50%">
         </section>
 
     </main>
 
     <footer>
         <p>&copy; 2022, Bountiful Foods</p>
+        <p><span id="currentday"></span></p>
     </footer>
     <script src="./scripts/bountiful.js"></script>
 </body>

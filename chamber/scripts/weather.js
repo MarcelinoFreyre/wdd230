@@ -8,6 +8,8 @@ const apiKey = "4ce191c6f8d82ff7aa50f70affa03999";
 
 const apiURL = `https://api.openweathermap.org/data/2.5/weather?lat=-31.633&lon=-60.700&units=imperial&appid=${apiKey}`;
 
+
+
 async function apiFetch() {
     try {
       const response = await fetch(apiURL);

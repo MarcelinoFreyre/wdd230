@@ -124,8 +124,6 @@ nav {
 }
 
 .hero {
-    /* height: 200px;
-    width: 200px; */
     padding: 0;
     position: relative;
 }
@@ -133,10 +131,6 @@ nav {
 .hero-img {
     max-width: 100%;
     max-height: 100%;
-/*    padding-top: 5px;
-    padding-left: 5px;
-    border: solid 2px;
-    height: 100px;*/
 }
 
 .hero button {
@@ -153,16 +147,6 @@ nav {
     color: #FAC042;
     background-color: #22214E;
 }
-
-/* .hero-button {
-    position: absolute;
-    margin-top: 10px;
-    color: white;
-    padding: 5px;
-    border: solid 1px;
-    border-radius: 10px;
-    background-color: #22214E;
-} */
 
 .event {
     color: white;
@@ -252,20 +236,12 @@ nav {
     overflow: auto;
 }
 
-/* .spotlight p {
-   
-} */
-
 .spotlight3 {
     color: white;
     background-color: #22214E;
     display: none;
     overflow: auto;
 }
-
-/* .spotlight3 p {
-   
-} */
 
 .join {
     color: white;
@@ -422,7 +398,6 @@ nav {
         width: 100%;
         height: 360px;
         margin-top: 10px;
-    
     }
 
     .hero-img {

@@ -4,8 +4,8 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./styles/home.css">
-    <title>Home Page</title>
+    <link rel="stylesheet" href="./styles/aboutus.css">
+    <title>About Us</title>
 </head>
 <body>
     <header>
@@ -49,62 +49,28 @@
         <a class="place-order" href="./fresh.html">Place Order</a>
         
     </header>
-
     <main>
 
-        <img id="banner-img" src="./images/Frutas2.webp" alt="Fruits for the largest size">
+        <img id="banner-img" src="./images/hills.webp" alt="Hills">
 
-        <section class="coast">
-            <img src="./images/Coast.jpg" alt="California Coast">
+        <div class="history main-text">
+            <h1>Our History</h1>
+            <p>Lorem ipsum dolor sit amet. Cum officia consequatur et aspernatur atque qui necessitatibus dolor est Quis dolores aut placeat 
+                nihil? Ut quibusdam provident non magni debitis nam cupiditate sapiente et velit culpa ut blanditiis quam.
 
-            <div class="main-text">
-                <h1></h1>
-                <p>
-
-                </p>
-            </div>
-        </section>
-
-        <div class="weather">
-            <p><strong>Weather</strong></p>
-            <section>
-                <div>
-                    <figure>
-                        <img src="" alt="" id="weathericon" />
-                        <figcaption></figcaption>
-                      </figure>
-                </div>
-                <div>
-                    <p><span id="temperature"></span>°F</p>
-                    <p id="currently"></p>
-                    <p>Wind Speed: <span id="windSpeed"></span> km/h</p>
-                    <p>
-                    Wind Chill: <span id="windChill"></span>
-                    </p>
-                </div>
-                
-            </section>
+                Et minus unde ex dignissimos quidem ut voluptatem nihil. Id earum excepturi et labore neque qui quae dolorum et sint 
+                cupiditate et natus quia id corrupti consequatur? Eum ipsa tenetur et ullam voluptas aut quaerat minus.</p>
         </div>
 
-        <section class="order">
-            <div class="main-text">
-                <h1>Place an Order</h1>
-                <p>
-                    Hosting a weekend dinner or special event? Place an order for pickup on
-                     Saturday morning at the Laguna Beach Farmers' Market, or have it 
-                     delivered within LA and OC for a $25 flat fee. Order must be placed 
-                     at least 2 days prior to pickup/delivery.
-                </p>
-                <a href="./fresh.html">Place an Order</a>
-            </div>
 
-            <img src="./images/shake.webp" alt="Glass Containing Shake" width="50%">
-        </section>
-
+        <div class="map-img">
+            <!-- <img src="./images/CaliforniaMap.PNG" alt="Map of California" width="70%"> -->
+            <iframe width="425" height="350" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://www.openstreetmap.org/export/embed.html?bbox=-117.54821777343751%2C33.035146906654944%2C-116.78192138671876%2C33.362649660256665&amp;layer=mapnik&amp;marker=33.19905140349983%2C-117.16506958007812"></iframe>
+        </div>
     </main>
-
     <footer>
         <p>&copy; 2022, Bountiful Foods</p>
+        <p><span id="currentday"></span></p>
     </footer>
     <script src="./scripts/bountiful.js"></script>
 </body>
